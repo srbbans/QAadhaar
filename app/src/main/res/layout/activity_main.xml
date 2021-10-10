@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:alpha=".1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/aadhaar_logo" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/header_shaped"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ageo_bold"
+        android:letterSpacing=".1"
+        android:padding="30dp"
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ageo_bold"
+        android:letterSpacing=".1"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Scan and Store anywhere"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="?attr/selectableItemBackground"
+        android:drawableEnd="@drawable/round_qr_code_scanner_grey_600_36dp"
+        android:fontFamily="@font/ageo_bold"
+        android:letterSpacing=".1"
+        android:text="SCAN"
+        android:textColor="@color/default_primary_dark"
+        android:textSize="30sp"
+        android:drawableTint="@color/default_primary_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/ageo_bold"
+        android:letterSpacing=".1"
+        android:text="Saved"
+        android:textColor="@color/default_primary_dark"
+        android:drawableTint="@color/default_primary_dark"
+        android:textSize="30sp"
+        android:drawableLeft="@drawable/round_list_alt_grey_600_36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scan" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/ageo_bold"
+        android:letterSpacing=".2"
+        android:gravity="center"
+        android:layout_margin="4dp"
+        android:text="App by SOURABH BANS"
+        android:textColor="#7DA0B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
